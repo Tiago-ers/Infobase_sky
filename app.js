@@ -11,5 +11,5 @@ app.use('/login', router.loginRouter);
 app.use('/finduser', router.findUser);
 
 app.listen(port, () => {
-  console.log(`Server started on port 3333`);
+  console.log(`Server started on port ${port}`);
 });
