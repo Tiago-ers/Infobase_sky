@@ -44,7 +44,7 @@ const login = async (req, res) => {
   try {
     const userLogin = await User.findOneAndUpdate(
       { email },
-      { $set: { ultimo_login: moment().format('DD/MM/YYYY hh-mm-ss') } },
+      { $set: { ultimo_login: moment().format('DD/MM/YYYY hh:mm:ss') } },
       { new: true, useFindAndModify: false }
     );
     return res.status(201).json(userLogin);

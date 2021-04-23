@@ -30,15 +30,15 @@ const UserSchema = new mongoose.Schema(
     },
     data_criacao: {
       type: String,
-      default: moment().format('DD/MM/YYYY hh-mm-ss'),
+      default: moment().format('DD/MM/YYYY hh:mm:ss'),
     },
     data_atualizacao: {
       type: String,
-      default: moment().format('DD/MM/YYYY hh-mm-ss'),
+      default: moment().format('DD/MM/YYYY hh:mm:ss'),
     },
     ultimo_login: {
       type: String,
-      default: moment().format('DD/MM/YYYY hh-mm-ss'),
+      default: moment().format('DD/MM/YYYY hh:mm:ss'),
     },
     token: {
       type: String,
